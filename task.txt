@@ -1,0 +1,50 @@
+Baigiamasis projektas
+Baigiamoji uzduotis
+
+Sio projekto metu reikes sukurti internetini foruma naudojant React, NodeJS Express ir MongoDB arba MySQL. Forumo tikslas - leisti uzduoti klausimus, i juos atsakineti ir zymeti patinkancius arba nepatinkancius atsakymus. Galite isivaizduoti kazka panasaus i https://stackoverflow.com/questions, tik jums rekes padaryt supaprastinta versija.
+
+Funkcionalumas:
+- Registruotis
+- Prisijungti
+- Uzduoti nauja klausima (tik prisijungus)
+- Istrinti klausima (tik prisiijungus)
+- Atsakyti i uzduota klausima (tik prisijungus)
+- Istrinti atsakyma (tik prisijungus)
+- Zymeti/atzymeti patinkacius ir nepatinkancius atsakymus (like/dislike) (tik prisijungus) 
+- Perziureti klausimu sarasa.
+- Filtruoti atsakytus arba neatsakytus klausimus
+- Perziureti klausimu atsakymus
+
+Forumo projektas sudeda is frontend'o ir backend'o daliu:
+Backend'e naudosime NodeJS Express, MongoDB arba MySQL ir kelis papildomus npm paketus, kuries palengvins darba. Butina susikurti ir susikonfiguruoti `eslint`, `dotenv`, o toliau Jusu laisve rinktis.
+Frontend'e naudosime React. Kaip ir backend'e galima naudoti papildomjus npm paketus.
+
+### Backend'as
+
+POST /register
+POST /login
+
+GET /questions
+POST /question
+DELETE /question/:id
+
+GET /question/:id/answers
+POST /question/:id/answers
+DELETE /answer/:id
+
+
+### Frontend'as
+
+Frontend'as neturi nustatyto dizaino , kuri reikia atkartoti. Taciau jum tenka sunkesne uzduotis - patiems sugalvoti ir sukurti puslapio dizaina. Svarbiausia ispildyti visus funkcinius reikalavimus ir validuoti vartotojo ivedamus duomenis.
+
+Uzduoties ikelimo instrukcijos
+
+1. Sukurti GitHub repozitorija.
+
+2.!!!!!!!!!!!  Kiekvienos paskaitos metu ar darant uzuoti koda pushint bent 2 kartus per paskaita.  !!!!!!!!!!!
+
+3. Galutine kodo versija pasidalinti su destytoju.
+
+Jeigu to padaryti nepavyks galite tiesiog ikelti archyvuotus failus.
+
+Sekmes!
