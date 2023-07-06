@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 var cors = require("cors");
-// const questionsRoutes = require('./routes/questions');
-// const answersRoutes = require("./routes/answers");
-const userRoutes = require("./routes/users");
+const questionsRoutes = require('./routes/questions');
+const answersRoutes = require("./routes/answers");
+const usersRoutes = require("./routes/users");
 
 require("dotenv").config();
 
@@ -14,13 +14,13 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// app.use(questionsRoutes);
-// app.use(answersRoutes);
-app.use(userRoutes);
+app.use(questionsRoutes);
+app.use(answersRoutes);
+app.use(usersRoutes);
 
 mongoose
     .connect(
-        "mongodb+srv://borunovasviktoras:borunovas1@cluster0.60ilsjj.mongodb.net/?retryWrites=true&w=majority"
+        "mongodb+srv://borunovasviktoras:borunovas1@cluster0.60ilsjj.mongodb.net/stackoverflow?retryWrites=true&w=majority"
     )
     .then(() => {
         console.log("CONNECTED");
