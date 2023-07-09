@@ -1,16 +1,10 @@
 import styles from './styles.module.css';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <div className={styles.logo}>
-        <a href="/">
-        </a>
-      </div>
-      <div className={styles.navlinks}>
-        <a href="/">Home</a>
-        <a href="/newQuestion">Ask a question</a>
-      </div>
+        <Link href="/newquestion">New Question</Link>
     </div>
   );
 };
