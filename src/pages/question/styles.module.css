@@ -1,0 +1,77 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.questionContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+  
+.answerCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid orange;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.questionText {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.answerCard {
+    border: 1px solid orange;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+  
+.answerText {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+  
+.deleteButton {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+  
+.answerForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.answerInput {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  
+.submitButton {
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}  

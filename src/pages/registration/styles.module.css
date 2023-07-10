@@ -13,6 +13,7 @@
     font-weight: bold;
 }
   
+.form input[type="text"],
 .form input[type="email"],
 .form input[type="password"] {
     width: 90%;
@@ -29,4 +30,17 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
-}  
+}
+  
+.redirectButton {
+    background-color: transparent;
+    color: #0077cc;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+  
+.redirectButton:hover {
+    text-decoration: underline;
+}
+  

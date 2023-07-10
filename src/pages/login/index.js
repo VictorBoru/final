@@ -24,7 +24,7 @@ const LoginForm = () => {
     console.log("response", response);
     if (response.data.response === "Successfully logged in") {
       cookie.set('jwt', response.data.jwt);
-      router.push("/questions");
+      router.push("/");
     } else {
       alert("Invalid credentials");
     }
@@ -46,5 +46,3 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
-
-

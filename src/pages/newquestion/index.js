@@ -35,18 +35,19 @@ const NewQuestion = () => {
     <div>
       <Navbar />
       <div className={styles.container}>
-        <h2>Add New Question</h2>
+        <h2 className={styles.title}>Add New Question</h2>
         <form onSubmit={handleSubmit} className={styles.form}>
-          <label>
+          <label className={styles.label}>
             Question Text:
-            <input
-              type="text"
-              value={questionText}
-              onChange={(e) => setQuestionText(e.target.value)}
-              required
-            />
+          <input
+            type="text"
+            value={questionText}
+            onChange={(e) => setQuestionText(e.target.value)}
+            className={styles.input}
+            required
+          />
           </label>
-          <input type="submit" value="Add Question" />
+          <input type="submit" value="Add Question" className={styles.submit} />
         </form>
       </div>
     </div>
